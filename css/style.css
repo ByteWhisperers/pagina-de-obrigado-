@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.checkmark {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.order-details {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+    border-left: 5px solid #4CAF50;
+}
+
+.order-value {
+    font-size: 2em;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.order-info {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.next-steps {
+    background: #e3f2fd;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+    border-left: 5px solid #2196F3;
+}
+
+.next-steps h3 {
+    color: #1976D2;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.next-steps p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-info {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #eee;
+}
+
+.contact-info h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer {
+    margin-top: 40px;
+    color: #999;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .order-value {
+        font-size: 1.8em;
+    }
+}
+
